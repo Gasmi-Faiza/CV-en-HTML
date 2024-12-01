@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Questionnaire</title>
+    </head>
+    <body>
+        <h1>Questionnaire d'informations</h1>
+        <form method="post" action="traitement.html">
+            <!-- Zone de texte mono-ligne -->
+             <p>
+                <label for="nom">Votre nom :</label>
+                <input type="text" name="nom" id="nom" placeholder="Entrez votre nom" required>
+             </p>
+             <p>
+                <label for="email">Votre mail :</label>
+                <input type="email" name="email" id="email" placeholder="Entrez votre email" required>
+             </p>
+            <!-- Zone de texte multi-ligne -->
+             <p>
+                <label for="commentaires">Vos commentaires :</label>
+                <textarea name="commentaires" id="commentaires" rows="5" cols="50" placeholder="Tapez vos commentaires ici...."></textarea>
+             </p>
+            <!-- Cases à cocher -->
+             <p>
+                Cochez les pays que vous souhaitez visiter :<br>
+                <input type="checkbox" name="pays[]" id="turquie" value="Turquie"
+                <label for="turquie">Turquie</label><br>
+                <input type="checkbox" name="pays[]" id="chine" value="Chine"
+                <label for="chine">Chine</label><br>
+                <input type="checkbox" name="pays[]" id="allemagne" value="Allemagne"
+                <label for="allemagne">Allemagne</label><br>
+                <input type="checkbox" name="pays[]" id="france" value="France"
+                <label for="france">France</label><br>
+                <input type="checkbox" name="pays" id="tunisie" value="Tunisie"
+                <label for="tunisie">Tunisie</label><br>
+             </p> 
+            <!-- Zone d'options-->
+             <p>
+                Veuillez indiquer votre spécialité :<br>
+                <input type="radio" name="spécialité" id="e-business" value="E-Business"
+                <label for="e-business">E-Business</label><br>
+                <input type="radio" name="spécialité" id="e-banking" value="E-Banking"
+                <label for="e-banking">E-Banking</label>
+                <input type="radio" name="spécialité" id="management digital" value="Management digital"
+                <label for="management digital">Management digital</label><br>
+                <input type="radio" name="spécialité" id="commerce international" value="Commerce international"
+                <label for="commerce international">Commerce international</label>
+             </p>
+            <!-- Liste déroulante -->
+             <p>
+                <label for="wilaya">Dans quelle wilaya habitez-vous ?</label>
+                <select name="wilaya" id="wilaya">
+                    <option value="alger">Alger</option>
+                    <option value="oran">Oran</option>
+                    <option value="setif">Setif</option>
+                    <option value="skiksa">Skikda</option>
+                    <option value="annaba">Annaba</option>
+                    <option value="medea">Medea</option>
+                </select>
+             </p>
+            <!-- Vos centres d'intérets--> 
+             <p>
+                <label for="interets">Vos centres d'intérets</label><br>
+                <textarea name="interets" id="interets" rows="4" cols="50" placeholder="Exemple :Lecture, Sport, Voyages..."></textarea>
+             </p>
+            <!-- Vos animaux préférés --> 
+             <p>
+                Vos animaux préférés (choisissez-en plusieurs si nécessaire) :<br>
+                <input type="checkbox" name="animaux[]" id="chien" value="chien"
+                <label for="chien">Chien</label><br>
+                <input type="checkbox" name="animaux[]" id="chat" value="chat"
+                <label for="chat">Chat</label><br>
+                <input type="checkbox" name="animaux[]" id="lapin" value="lapin"
+                <label for="lapin">Lapin</label><br>
+                <input type="checkbox" name="animaux[]" id="oiseau" value="oiseau"
+                <label for="oiseau">Oiseau</label><br>
+                <input type="checkbox" name="animaux" id="poisson" value="poisson"
+                <label for="poisson">Poisson</label><br>
+             </p>
+            <!-- Votre couleur préférée -->
+             <p>
+                <label for="couleur">Votre couleur préférée :</label><br>
+                <input type="color" name="couleur" id="couleur" value="#000000">
+             </p>
+            <!-- Boutons --> 
+             <p>
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Réinitialiser">
+             </p>
+        </form>
+    </body>
+</html>
