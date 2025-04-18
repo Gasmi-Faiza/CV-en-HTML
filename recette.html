@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ajouter une recette</title>
+</head>
+<body>
+  <h1>Ajouter une nouvelle recette</h1>
+
+  <form action="traitement.php" method="POST">
+    <label for="titre">Titre de la recette :</label><br>
+    <input type="text" name="titre" id="titre" required><br><br>
+
+    <label for="description">Description :</label><br>
+    <textarea name="description" id="description" required></textarea><br><br>
+
+    <label for="ingredients">Ingrédients :</label><br>
+    <textarea name="ingredients" id="ingredients" required></textarea><br><br>
+
+    <label for="etapes">Étapes de préparation :</label><br>
+    <textarea name="etapes" id="etapes" required></textarea><br><br>
+
+    <input type="submit" value="Ajouter la recette">
+  </form>
+
+</body>
+</html>
